@@ -4,7 +4,7 @@ import { MainProducts } from "app/components/home/MainProducts";
 
 export default function Home() {
   return (
-    <main className="font-extrabold">
+    <main>
       <Hero />
       <Description />
       <MainProducts />
