@@ -19,7 +19,6 @@ const getProducts = async (): Promise<Product[] | undefined> => {
 
 export const MainProducts = async () => {
     const products = await getProducts()
-    console.log(products)
     return (
         <section className={styles.MainProducts}>
             <h3>New Products Released!</h3>
