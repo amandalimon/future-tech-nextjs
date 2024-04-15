@@ -10,7 +10,7 @@ export const getProducts = async (): Promise<Product[] | undefined> => {
             }
         })
         const { products } = await response.json()
-        return products
+        return products as Product[]
     } catch (error) {
         console.log(error)
     }
