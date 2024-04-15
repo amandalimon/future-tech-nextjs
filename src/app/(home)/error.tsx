@@ -1,10 +1,5 @@
 "use client";
 
-interface ErrorProps {
-    error: Error;
-    reset: () => void
-}
-
 export default function Error({ reset }: ErrorProps) {
     return (
         <div
