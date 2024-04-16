@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { getProducts } from 'app/services/shoppify'
+import { getProducts } from 'app/services/shoppify/products'
 import styles from './MainProducts.module.sass'
 
 export const MainProducts = async () => {
