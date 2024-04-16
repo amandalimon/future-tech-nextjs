@@ -3,9 +3,7 @@ import { getProducts } from 'app/services/shoppify'
 import styles from './MainProducts.module.sass'
 
 export const MainProducts = async () => {
-    const response = await (fetch('http://localhost:3000/api'))
-    const { products } = await response.json()
-    
+    const products = await getProducts()
     return (
         <section className={styles.MainProducts}>
             <h3>New Products Released!</h3>
