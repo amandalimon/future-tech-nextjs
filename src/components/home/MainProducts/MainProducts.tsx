@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import { getProducts } from 'app/services/shoppify/products'
+import { getMainProducts } from 'app/services/shoppify/products'
 import styles from './MainProducts.module.sass'
 
 export const MainProducts = async () => {
-    const products = await getProducts()
+    const products = await getMainProducts()
+    
     return (
         <section className={styles.MainProducts}>
             <h3>New Products Released!</h3>
