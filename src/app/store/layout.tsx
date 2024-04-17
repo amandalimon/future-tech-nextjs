@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { getCollections } from "app/services/shoppify/collections"
+import { getCollections } from "app/services/shopify/collections"
 import styles from "./StoreLayout.module.sass"
 
 export default async function Layout({ children }: { children: React.ReactNode }) {

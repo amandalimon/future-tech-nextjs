@@ -1,5 +1,5 @@
 import { ProductView } from "app/components/product/ProductView/ProductView"
-import { getProducts } from "app/services/shoppify/products"
+import { getProducts } from "app/services/shopify/products"
 
 interface ProductPageProps {
     searchParams: {
