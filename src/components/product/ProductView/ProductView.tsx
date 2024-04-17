@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SanitizeHTML } from "app/components/shared/SanitizeHTML";
 import { ProductViewItemsOrder } from "./ProductViewItemsOrder";
 import styles from './ProductView.module.sass'
 
@@ -26,9 +27,9 @@ export const ProductView = ({ product }: ProductViewProps) => {
                 <p className={styles.ProductView__info__category}>
                     {product.tags}
                 </p>
-                <p className={styles.ProductView__info__description}>
+                <SanitizeHTML tag="p" className={styles.ProductView__info__description}>
                     {product.description}
-                </p>
+                </SanitizeHTML>
                 <span className={styles.ProductView__info__price}>
                     $ {product.price}
                 </span>
