@@ -13,25 +13,24 @@ const saveArrayToLocalStorage = (array: CartItem[]) => {
 export const useShopingCart = create<Store>()((set) => ({
     cart: [],
 
-    addToCart: (cartItem) => set(
-        (state) => {
-            const currentCart = state.cart
-            const itemExists = currentCart.find((item) => item.id === cartItem.id)
-            // avoid duplicated items
-            const replaceExistingItem = currentCart.map((item) => {
-                if (item.id === cartItem.id) {
-                    return cartItem
-                }
-                return item
-            })
-            if (itemExists) {
-                saveArrayToLocalStorage(replaceExistingItem)
-                return ({ cart: replaceExistingItem })
+    addToCart: (cartItem) => set((state) => {
+        const currentCart = state.cart
+        const itemExists = currentCart.find((item) => item.id === cartItem.id)
+        // avoid duplicated items
+        const replaceExistingItem = currentCart.map((item) => {
+            if (item.id === cartItem.id) {
+                return cartItem
             }
-            saveArrayToLocalStorage([...state.cart, cartItem])
-            return ({ cart: [...state.cart, cartItem] })
-        }),
-
+            return item
+        })
+        if (itemExists) {
+            saveArrayToLocalStorage(replaceExistingItem)
+            return ({ cart: replaceExistingItem })
+        }
+        saveArrayToLocalStorage([...state.cart, cartItem])
+        return ({ cart: [...state.cart, cartItem] })
+    }),
+    
     removeCartItem: (cartItem) => set((state) => {
         const currentCart = state.cart
         const newCart = currentCart.filter((item) => item.id !== cartItem.id)
