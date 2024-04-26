@@ -4,13 +4,13 @@ export const dynamic = "force-dynamic"
 
 export default async function MyAccountPage() {
     const customer = await validateAccessToken()
-    
+
     return (
         <div>
+            <h2>Account Information</h2>
             <section>
-                <h2>Account Information</h2>
-                <h1>Name: {customer?.firstName}</h1>
-                <p>Email: {customer?.email}</p>
+                <p>{customer?.firstName}</p>
+                <p>{customer?.email}</p>
             </section>
         </div>
     );

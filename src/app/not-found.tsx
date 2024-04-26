@@ -13,13 +13,13 @@ export default function NotFound() {
                 height={200}
             />
             <h2 className={styles.NotFound__subtitle}>
-                Oops! Looks like you've stumbled upon our 404 Error Page.
+                Oops! Looks like you&apos;ve stumbled upon our 404 Error Page.
             </h2>
             <p className={styles.NotFound__description}>
-                Don't worry, we're here to help you find your way back to shopping bliss.
+                Don&apos;t worry, we&aposre here to help you find your way back to shopping bliss.
             </p>
             <Link className={styles.NotFound__link} href="/store">
-                Let's go shopping!
+                Let&apos;s go shopping!
             </Link>
         </main>
     );
