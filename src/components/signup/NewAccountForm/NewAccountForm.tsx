@@ -1,15 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { handleCreateUser } from "app/actions";
 import styles from "./NewAccountForm.module.sass";
-export const NewAccountForm = () => {
 
+export const NewAccountForm = () => {
     const [errors, setErrors] = useState<string[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
+        const formData = new FormData(event.target as HTMLFormElement);
         await handleCreateUser(formData)
     }
 
