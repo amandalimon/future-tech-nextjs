@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Future Tech
 
-## Getting Started
+Future Tech is a dynamic web application that maximizes the advanced features of Next.js. With dynamic routes and various data fetching methods, including GraphQL, it provides a smooth and efficient experience for users. This project has been an invaluable opportunity to become familiar with the framework and to explore its potential in creating modern and dynamic web applications.
 
-First, run the development server:
+## Key Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Shopify Integration:** The application consumes the Shopify API to efficiently display products.
+-   **Secure Authentication:** It implements a robust authentication system, generating and validating access tokens for users.
+-   **Route Protection:** Middleware is used to ensure routes are protected and only accessible to authorized users.
+-   **Load Optimization:** Techniques such as parallel routing have been implemented to improve loading speed and user experience.
+-   **Cookie Management:** The application makes use of cookies to securely and efficiently maintain user sessions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo 
+Thank you for exploring [Future Tech](https://future-tech-nextjs-p4oatg5r3-amanda-limons-projects.vercel.app/) 🌐✨
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots
+*Home Page*
+![Home](/screenshots/home.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+*Store*
+![Store](/screenshots/store.png)
 
-## Learn More
+*Product View*
+![Product View](/screenshots/product.png)
 
-To learn more about Next.js, take a look at the following resources:
+*Sign up*
+![Sign Up](/screenshots/signup.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*My Account Page*
+![My Account](/screenshots/my-account.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*Checkout*
+![Home](/screenshots/checkout.png)
