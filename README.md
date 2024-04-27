@@ -11,7 +11,7 @@ Future Tech is a dynamic web application that maximizes the advanced features of
 -   **Cookie Management:** The application makes use of cookies to securely and efficiently maintain user sessions.
 
 ## Demo 
-Thank you for exploring [Future Tech](https://future-tech-nextjs-p4oatg5r3-amanda-limons-projects.vercel.app/) 🌐✨
+Thank you for exploring [Future Tech](https://future-tech-nextjs.vercel.app/) 🌐✨
 
 ## Screenshots
 *Home Page*
